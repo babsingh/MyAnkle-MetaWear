@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools">
+    
+    <!-- default android theme, any customizations to the parent would go here -->
+    <style parent="@android:Theme.Holo.Light" name="AppTheme">  
+        
+        <!--  Action bar styles -->
+        <item name="android:actionBarStyle">@style/MyAnkle.ActionBar</item>
+        
+        <!--  Action bar tabtext style -->
+        <item name="android:actionBarTabTextStyle">@style/MyAnkle.ActionBarTabText</item>
+                 
+        <!-- Action bar drop down navigation style -->
+        <item name="android:actionDropDownStyle">@style/MyAnkle.DropDownNav</item>
+        
+        <!-- Custom themes for overflow action bar menu -->
+        <item name="android:actionBarWidgetTheme">@style/MyAnkle.ActionBarWidgetStyle</item>
+        
+        <!-- Spinner style -->
+        <item name="android:spinnerDropDownItemStyle">@style/DropDownItem</item>
+    	<item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+    	      
+    </style> 
+    
+    <!-- ActionBar -->
+    <style 	name="MyAnkle.ActionBar"
+        	parent="@android:style/Widget.Holo.Light.ActionBar">    
+    	<item name="@android:titleTextStyle">@style/MyAnkle.ActionBarTitleText</item> 
+	</style>    
+
+    <!-- ActionBar title text -->
+    <style name="MyAnkle.ActionBarTitleText"
+           parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="@android:textColor">@color/blue</item> 
+        <item name="@android:fontFamily" tools:targetApi="16" >sans-serif</item>        
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- ActionBar tabs text styles -->
+    <style name="MyAnkle.ActionBarTabText"
+           parent="@android:style/Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">@color/blue</item>
+        <item name="@android:fontFamily" tools:targetApi="16" >sans-serif-light</item>  
+    </style>    
+    
+    <!-- ActionBar overflow menu styles -->
+    <style name="MyAnkle.ActionBarWidgetStyle" parent="@android:style/Theme.Holo.Light"> 	    
+	    <!-- Actionbar overflow menu -->
+    	<item name="android:popupMenuStyle">@style/MyAnkle.PopupMenuStyle</item>
+    	<item name="android:dropDownListViewStyle">@style/MyAnkle.DropDownListView</item>
+    	<item name="android:itemTextAppearance">@style/MyAnkle.ItemTextAppearance</item>     	
+	</style>    
+   	
+	<style name="MyAnkle.PopupMenuStyle" parent="@android:style/Widget.Holo.ListPopupWindow">
+    	<item name="android:popupBackground">@color/light_gray</item>    	   	
+	</style>
+	
+	<style name="MyAnkle.DropDownListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+    	<item name="android:listSelector">@drawable/selectable_background_stylingactionbar</item>
+	</style>
+	
+	<style name="MyAnkle.ItemTextAppearance" parent="@android:TextAppearance">
+		<item name="android:textColor">@drawable/menuselector</item>
+		<item name="@android:fontFamily" tools:targetApi="16" >sans-serif-light</item>  
+	</style>
+	
+	<style name="MyAnkle.DropDownNav" parent="@android:style/Widget.Holo.Spinner">
+    	<item name="android:background">@color/light_gray</item>
+    	<item name="android:popupBackground">@color/light_gray</item>
+    	<item name="android:dropDownSelector">@drawable/selectable_background_stylingactionbar</item>
+	</style>
+	
+	<style name="DropDownItem" parent="@android:style/Widget.Holo.Light.DropDownItem.Spinner">
+	    <item name="android:textAppearance">@style/MyAnkle.ItemTextAppearance</item>
+	</style>
+ 
+	<style name="SpinnerItem" parent="@android:style/Widget.Holo.TextView.SpinnerItem">
+	    <item name="android:textAppearance">@style/MyAnkle.ItemTextAppearance</item>
+	</style>
+	
+	<!-- Dialog animations -->
+	
+	<style name="DialogAnimation">
+    	<item name="android:windowExitAnimation">@anim/condense_to_bottom_right</item>
+	</style>
+	
+</resources>

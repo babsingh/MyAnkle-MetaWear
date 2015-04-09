@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/fragment_progress_label_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingTop="@dimen/medium_margin"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/extra_large_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fragment_progress_label_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingBottom="@dimen/medium_margin"
+            android:textColor="@color/skin"
+            android:textSize="@dimen/medium_text"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <android.support.v4.view.ViewPager
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/fragment_progress_graph_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/fragment_progress_graph_pager_buttonbar"
+                android:background="@android:color/white" >
+
+                <android.support.v4.view.PagerTitleStrip
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@color/blue"
+                    android:textColor="@color/white" />
+            </android.support.v4.view.ViewPager>
+
+            <Button
+                android:id="@+id/fragment_progress_graph_pager_buttonbar"
+                style="@android:style/ButtonBar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/extra_large_small_margin"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:background="@color/blue"
+                android:text="@string/fragment_progress_button_swipe_up"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_progress_inner_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

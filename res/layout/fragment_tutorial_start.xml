@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  	xmlns:tools="http://schemas.android.com/tools"
+  	android:id="@+id/tutorial_relative_layout"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:focusable="true" 
+    android:focusableInTouchMode="true"
+    android:padding="@dimen/medium_margin" >
+
+	<TextView
+		android:id="@+id/fragment_tutorial_start_textview_title"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:fontFamily="sans-serif-light"
+		android:gravity="center"
+		android:text="@string/tutorial_start_title"
+		android:textColor="@color/blue"
+		android:textSize="@dimen/extra_large_text"
+		android:textStyle="bold" 
+		android:layout_alignParentTop="true"/>
+	
+    
+	<ImageView
+		android:id="@+id/fragment_tutorial_start_imageview_logo"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@+id/fragment_tutorial_start_textview_title"
+	    android:layout_above="@+id/fragment_tutorial_start_textview_copy"
+	    android:src="@drawable/tutorial_start"
+	  
+	    android:scaleType="fitCenter"
+	    android:contentDescription="@+id/tutorial_start_logo_contentdescription"/>
+	    
+  	<TextView
+		android:id="@+id/fragment_tutorial_start_textview_copy"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:fontFamily="sans-serif-light"
+	    android:gravity="center"
+	    android:text="@string/tutorial_start_copy"
+	    android:textColor="@color/blue"
+	    android:textSize="@dimen/large_text"
+	    android:textStyle="bold"
+	    android:padding="@dimen/medium_margin"
+	    android:layout_alignParentBottom="true" />    
+    
+</RelativeLayout>

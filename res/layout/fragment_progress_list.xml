@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/fragment_progress_list_buttonbar"
+        style="@android:style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/extra_large_small_margin"
+        android:layout_gravity="center"
+        android:background="@color/blue"
+        android:text="@string/fragment_progress_button_swipe_down"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/fragment_progress_list_text_ankle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:padding="@dimen/small_margin"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/large_text"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_margin" />
+
+        <ListView
+            android:id="@+id/fragment_progress_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

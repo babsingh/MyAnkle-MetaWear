@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/fragment_exercise_selection_image_button_reselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/menu_item_select_ankle"
+        android:padding="@dimen/small_margin"
+        android:src="@drawable/ic_action_refresh" />
+
+    <TextView
+        android:id="@+id/fragment_exercise_selection_text_current_selection"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:padding="@dimen/small_margin"
+        android:text="@string/exercise_current_selection"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_text"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/fragment_exercise_selection_image_button_ankle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/menu_item_left_anke"
+        android:padding="@dimen/small_margin"
+        android:src="@drawable/menu_left_ankle_pressed" />
+
+    <ImageButton
+        android:id="@+id/fragment_exercise_selection_image_button_eye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/exercise_dialog_eye_open_desc"
+        android:padding="@dimen/small_margin"
+        android:src="@drawable/ic_eyes_open_pressed" />
+
+</LinearLayout>

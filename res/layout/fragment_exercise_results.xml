@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/medium_margin" >
+
+    <ScrollView
+	    android:layout_alignParentTop="true"
+	    android:layout_above="@+id/fragment_exercise_results_linearlayout_button_bar"
+	    android:id="@+id/fragment_exercise_results_scrollview"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:fillViewport="true" >
+	    
+		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+	
+	    	<TextView
+	    	    android:id="@+id/fragment_exercise_results_textview_exercise_name"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/extra_large_text"
+				android:textColor="@color/blue"
+		        android:fontFamily="sans-serif"
+				android:gravity="center" />
+	    	
+	    	<TextView
+	    	    android:id="@+id/fragment_exercise_results_exercise_textview_equipment"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/medium_text"
+				android:paddingTop="@dimen/small_margin"
+				android:textColor="@color/blue"
+		        android:fontFamily="sans-serif-light"
+				android:gravity="center" />
+	    	
+	    	<TextView
+	    	    android:id="@+id/fragment_exercise_results_textview_ankle_side"
+				android:layout_width="fill_parent"
+				android:textColor="@color/blue"
+		        android:fontFamily="sans-serif-light"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/medium_text"
+				android:gravity="center" />
+	
+	
+			<TextView 
+			    android:id="@+id/fragment_exercise_results_textview_meanR"
+				android:layout_width="match_parent" 
+				android:layout_height="wrap_content" 
+				android:gravity="center"
+				android:padding="@dimen/small_margin"
+				android:textSize="@dimen/large_text"
+				android:fontFamily="sans-serif-light"			
+				android:textColor="@color/skin"/>
+
+			<LinearLayout
+			    android:id="@+id/fragment_exercise_result_chart"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical"
+			    android:paddingBottom="@dimen/medium_margin" >
+			</LinearLayout>
+
+		</LinearLayout>	
+	</ScrollView>
+	
+    <LinearLayout
+        android:id="@+id/fragment_exercise_results_linearlayout_button_bar"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/fragment_exercise_results_button_retry"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/results_retry_exercise_button"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/fragment_exercise_results_button_new_exercise"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/results_back_to_exercises_button"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	<ScrollView
+	    android:layout_above="@+id/fragment_exercise_instructions_button_start"
+		android:layout_width="fill_parent"		
+		android:layout_height="fill_parent" >
+	
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/small_margin" >
+		
+		<TextView
+		    android:id="@+id/fragment_exercise_instructions_textview_name"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/extra_large_text"
+			android:textStyle="bold"	
+			android:textColor="@color/blue"		
+			android:fontFamily="sans-serif-light"
+			android:gravity="center" />
+		
+		<TextView
+		    android:id="@+id/fragment_exercise_instructions_textview_equipment"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/medium_text"
+			android:textStyle="normal"	
+			android:textColor="@color/skin"		
+			android:fontFamily="sans-serif-light"
+			android:gravity="center" />
+		
+		<ImageView
+		    android:contentDescription="@string/instruction_content_description"
+			android:id="@+id/fragment_exercise_instructions_imageview_icon"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:adjustViewBounds="true"
+			android:layout_marginTop="@dimen/small_margin"
+			android:layout_marginBottom="@dimen/small_margin"/>
+		
+		<TextView
+		    android:id="@+id/fragment_exercise_instructions_textview_difficulty"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="sans-serif-light"
+			android:textColor="@color/blue"
+			android:textSize="@dimen/large_text" />
+				
+		<TextView
+		    android:id="@+id/fragment_exercise_instructions_textview_explination"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="sans-serif-light"
+			android:textColor="@color/blue"
+			android:textSize="@dimen/medium_text" />
+		
+		<Space 
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/small_margin" />
+		</LinearLayout>
+	</ScrollView>
+
+	<Button
+		android:id="@+id/fragment_exercise_instructions_button_start"
+		android:text="@string/instruction_button"
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/extra_large_margin"
+		android:textSize="@dimen/extra_large_text"
+		android:background="@color/blue"
+		android:textColor="@color/white"
+		android:layout_margin="@dimen/small_margin" 
+		android:fontFamily="sans-serif-light"
+		android:layout_alignParentBottom="true" />
+</RelativeLayout>

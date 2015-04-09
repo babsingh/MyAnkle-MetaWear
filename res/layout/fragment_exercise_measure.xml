@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/fragment_exercise_measure_textview_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:fontFamily="sans-serif"
+        android:padding="@dimen/medium_margin"
+        android:textSize="@dimen/extra_large_text" />
+       
+     <TextView
+        android:id="@+id/fragment_exercise_measure_textview_subtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_exercise_measure_textview_title"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingRight="@dimen/medium_margin"
+        android:textSize="@dimen/medium_text" />
+
+    <TextView
+        android:id="@+id/fragment_exercise_measure_textview_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:fontFamily="sans-serif-light"
+        android:textSize="@dimen/extra_large_text" />
+
+    <TextView
+        android:id="@+id/fragment_exercise_measure_textview_seekbartext"
+        android:text="@string/measure_seekbar_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_exercise_measure_seekbar"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="@dimen/large_margin"
+        android:textColor="@color/light_gray" />
+
+    <SeekBar
+        android:id="@+id/fragment_exercise_measure_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="@dimen/large_margin"
+        android:paddingLeft="@dimen/large_margin"
+        android:paddingRight="@dimen/large_margin"
+        android:paddingTop="@dimen/small_margin" />
+
+	<TextView
+        android:id="@+id/aggregate_balance_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_exercise_measure_textview_seekbartext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:text="Aggregate BN = ..."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	<TextView
+        android:id="@+id/transient_balance_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_exercise_measure_textview_seekbartext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Transient BN = ..."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+    <!-- 
+    <TextView
+        android:id="@+id/text_view_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_exercise_measure_textview_seekbartext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:text="x = ..."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/text_view_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_exercise_measure_textview_seekbartext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:text="y = ..."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/text_view_z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_exercise_measure_textview_seekbartext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="z = ..."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    -->
+
+</RelativeLayout>

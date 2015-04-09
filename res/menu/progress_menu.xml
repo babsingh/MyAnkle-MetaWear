@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/progress_menu_button_left_ankle"
+        android:title="@string/menu_item_left_anke"
+        android:icon="@drawable/menu_left_ankle" 
+        android:visible="false" 
+        android:enabled="true" 
+        android:showAsAction="always">
+    </item>
+    
+    <item android:id="@+id/progress_menu_button_right_ankle"
+        android:title="@string/menu_item_right_ankle"
+        android:icon="@drawable/menu_right_ankle" 
+        android:visible="false" 
+        android:enabled="true" 
+        android:showAsAction="always">
+    </item>
+</menu>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/medium_margin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/small_margin" 
+        android:focusable="true"
+    	android:focusableInTouchMode="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Researcher Name" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/medium_margin" />
+
+                <EditText
+                    android:id="@+id/activity_mass_upload_text_researcher_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName" />
+                
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/medium_margin"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/activity_mass_upload_button_update_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:fontFamily="sans-serif-light"
+                android:text="Update Name"
+                android:textColor="@color/white" />
+            
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Server ID" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/medium_margin" />
+
+                <EditText
+                    android:id="@+id/activity_mass_upload_text_server_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" >
+                </EditText>
+                
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/medium_margin"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/activity_mass_upload_button_update_server_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:fontFamily="sans-serif-light"
+                android:text="Update Server ID"
+                android:textColor="@color/white" />
+            
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Exercise Time (s)" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/medium_margin" />
+
+                <EditText
+                    android:id="@+id/activity_mass_upload_text_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" >
+                </EditText>
+                
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/medium_margin"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/activity_mass_upload_button_update_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:fontFamily="sans-serif-light"
+                android:text="Update Time"
+                android:textColor="@color/white" />
+            
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/large_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/activity_mass_upload_spinner_body_part"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Space
+                android:layout_width="@dimen/medium_margin"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/activity_mass_upload_button_update_part"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:fontFamily="sans-serif-light"
+                android:text="Update Body Part"
+                android:textColor="@color/white" />
+            
+        </LinearLayout>
+        
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/large_margin" />
+
+        <Button
+            android:id="@+id/activity_mass_upload_button_send"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:fontFamily="sans-serif-light"
+            android:padding="@dimen/medium_margin"
+            android:text="Upload All Files"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</ScrollView>

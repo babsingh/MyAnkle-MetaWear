@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  	xmlns:tools="http://schemas.android.com/tools"
+  	android:id="@+id/tutorial_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusable="true" 
+    android:focusableInTouchMode="true"
+    android:padding="@dimen/medium_margin" >
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:layout_alignParentTop="true"
+	    android:layout_above="@+id/fragment_tutorial_finish_linearlayout_button_bar" >
+
+	    <TextView
+	        android:id="@+id/fragment_tutorial_finish_textview_title"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:fontFamily="sans-serif-light"
+	        android:gravity="center"
+	        android:text="@string/tutorial_finish_title"
+	        android:textColor="@color/blue"
+	        android:textSize="@dimen/extra_large_text"
+	        android:textStyle="bold" />
+    
+	</LinearLayout>
+
+	<LinearLayout
+        android:id="@+id/fragment_tutorial_finish_linearlayout_button_bar"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/fragment_tutorial_finish_button_do_not_consent"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/tutorial_finish_button_bar_do_not_consent"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/fragment_tutorial_finish_button_consent"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/tutorial_finish_button_bar_consent"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    
+    
+    
+</RelativeLayout>

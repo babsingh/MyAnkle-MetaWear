@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/medium_margin"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <TextView
+        android:id="@+id/fragment_profile_injuries_label_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:padding="@dimen/medium_margin"
+        android:text="@string/profile_injuries_title_create"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/extra_large_text"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_margin" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_profile_injuries_button_submit"
+        android:layout_below="@id/fragment_profile_injuries_label_title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/fragment_profile_injuries_label_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/profile_injuries_body_create"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium_text" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_margin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/fragment_profile_injuries_checkbox_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/profile_question_label_left_ankle"
+                    android:textSize="@dimen/medium_text" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/small_margin" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/fragment_profile_injuries_label_left_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/medium_text" />
+
+                    <Button
+                        android:id="@+id/fragment_profile_injuries_button_discard_left"
+                        style="?android:attr/buttonBarStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/blue"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/profile_questions_button_bar_discard"
+                        android:textColor="@color/white"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_margin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/fragment_profile_injuries_checkbox_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/profile_question_label_right_ankle"
+                    android:textSize="@dimen/medium_text" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/small_margin" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/fragment_profile_injuries_label_right_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/medium_text" />
+
+                    <Button
+                        android:id="@+id/fragment_profile_injuries_button_discard_right"
+                        style="?android:attr/buttonBarStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/blue"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/profile_questions_button_bar_discard"
+                        android:textColor="@color/white"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_margin" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/fragment_profile_injuries_button_submit"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/profile_question_button_bar_finish"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

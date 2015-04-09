@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+	    android:background="@android:color/white"
+	    android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >   
+	
+	<LinearLayout
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"         
+        android:layout_centerVertical="true"     
+        android:layout_centerHorizontal="true" 
+        android:orientation="vertical" >
+        
+        <TextView
+			android:id="@+id/fragment_main_textview_title"	        
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		   	android:paddingBottom="@dimen/large_margin"
+		    android:text="@string/title_welcome_text" 
+		    android:textColor="@color/blue"
+		    android:fontFamily="sans-serif-light"
+		    android:textSize="@dimen/extra_large_text"/>
+		    
+		<Button         
+	       	android:id="@+id/fragment_main_button_exercises"	        
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/blue"
+	        android:textColor="@color/white"
+	        android:fontFamily="sans-serif-light"
+	        android:text="@string/title_start_button" />
+	    
+	    <Space 
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/small_margin"  />
+	    
+	    <Button
+	        android:id="@+id/fragment_main_button_progress"	        
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	       	android:background="@color/blue"
+	        android:textColor="@color/white"
+	        android:fontFamily="sans-serif-light"
+	        android:text="@string/title_progress_button" />	     
+	    
+	    <Space 
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/small_margin"  />
+	     
+	  	<Button
+	        android:id="@+id/fragment_main_button_tutorial"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	       	android:background="@color/blue"
+	        android:textColor="@color/white"
+	        android:fontFamily="sans-serif-light"
+	        android:text="@string/title_tutorial_button" />  
+	        
+	</LinearLayout> 
+	
+	</RelativeLayout> 
+

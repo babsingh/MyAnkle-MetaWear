@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ece1778.project.myAnkleUser"
+    android:versionCode="6"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="19" />    
+
+    <!-- MetaWear Permissions -->
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/myankle_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <uses-library android:name="android.test.runner" />
+        
+        <!-- MetaWearBle Service -->
+        <service android:name="com.mbientlab.metawear.api.MetaWearBleService" />
+        
+		<!-- login activity -->
+		<activity
+            android:name="com.ece1778.project.myAnkle.ActivityLogin"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- main activity -->
+        <activity
+            android:name="com.ece1778.project.myAnkle.ActivityMain"
+            android:screenOrientation="portrait" />
+
+        <!-- secondary activities -->
+        <activity
+            android:name="com.ece1778.project.myAnkle.ActivitySettings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ece1778.project.myAnkle.ActivityInformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ece1778.project.myAnkle.ActivityProfile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.ece1778.project.myAnkle.ActivityTutorial"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.ece1778.project.myAnkle.ActivityResearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ece1778.project.myAnkle.ActivityCalibration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ece1778.project.myAnkle.ActivityProgress"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ece1778.project.myAnkle.ActivityMeasure"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

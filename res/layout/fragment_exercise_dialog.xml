@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/fragment_exercise_dialog_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingTop="@dimen/small_margin"
+            android:paddingBottom="@dimen/medium_margin"
+            android:text="@string/exercise_dialog_title"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/large_text"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/fragment_exercise_dialog_layout_ankle_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" 
+            android:paddingLeft="@dimen/large_margin"
+            android:paddingRight="@dimen/large_margin"
+            android:paddingBottom="@dimen/medium_margin" >
+
+            <ImageButton
+                android:id="@+id/fragment_exercise_dialog_image_button_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/menu_item_left_anke"
+                android:padding="@dimen/small_margin"
+                android:src="@drawable/menu_left_ankle" />
+            
+        	<Space
+            	android:layout_width="@dimen/medium_margin"
+            	android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/fragment_exercise_dialog_image_button_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/menu_item_right_ankle"
+                android:padding="@dimen/small_margin"
+                android:src="@drawable/menu_right_ankle" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/fragment_exercise_dialog_layout_eye_state_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" 
+            android:paddingLeft="@dimen/large_margin"
+            android:paddingRight="@dimen/large_margin"
+            android:paddingBottom="@dimen/medium_margin" >
+
+            <ImageButton
+                android:id="@+id/fragment_exercise_dialog_image_button_eyes_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/exercise_dialog_eye_open_desc"
+                android:padding="@dimen/small_margin"
+                android:src="@drawable/ic_eyes_open" />
+            
+        	<Space
+            	android:layout_width="@dimen/medium_margin"
+            	android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/fragment_exercise_dialog_image_button_eyes_closed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/exercise_dialog_eye_closed_desc"
+                android:padding="@dimen/small_margin"
+                android:src="@drawable/ic_eyes_closed" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fragment_exercise_dialog_button_done"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/blue"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/ankle_selection_dialog_done"
+        android:textColor="@color/white" />
+
+</LinearLayout>

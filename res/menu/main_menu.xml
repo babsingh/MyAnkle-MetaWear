@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+	<!-- menu list items -->
+  	<item 
+  	    android:id="@+id/menu_logout" 
+  	    android:showAsAction="ifRoom"
+  	    android:title="@string/menu_logout" 
+  	    android:icon="@drawable/ic_fa_sign_out" 
+  	    android:visible="true" 
+  	    android:enabled="true"/>
+  	
+  	<item
+        android:id="@+id/menu_settings"
+        android:showAsAction="never"
+        android:title="@string/menu_item_settings"
+        android:visible="true"/>
+    
+   	<item 
+    	android:id="@+id/menu_profile"
+    	android:showAsAction="never"
+        android:title="@string/menu_item_profile"
+        android:visible="true"/>
+    
+    <item 
+        android:id="@+id/menu_calibration"
+        android:showAsAction="never"
+        android:title="@string/menu_item_calibration"
+        android:visible="true"/>
+       
+    <item
+        android:id="@+id/menu_info"
+        android:showAsAction="never"
+        android:title="@string/menu_item_info"
+        android:visible="true"/>
+       
+  	<item 
+        android:id="@+id/menu_server_id"
+        android:showAsAction="never"
+        android:title="@string/menu_item_user_id"
+        android:visible="true"/>
+  	 
+  	<item 
+        android:id="@+id/menu_research"
+       android:showAsAction="never"
+       android:title="@string/menu_item_research"
+       android:visible="false" 
+       android:enabled="false"/>
+     
+  	<item android:id="@+id/device_select" 
+        android:title="@string/label_select_device" 
+        android:showAsAction="ifRoom|withText" />
+    
+    <item android:id="@+id/device_change" 
+        android:title="@string/label_change_device" 
+        android:showAsAction="ifRoom|withText" />
+
+</menu>

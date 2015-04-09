@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:theme="@style/AppTheme">
+    <PreferenceCategory android:title="App Options">
+        <ListPreference 
+            android:key="prefCountdownDuration"
+            android:title="Countdown Duration"
+            android:entries="@array/countdownDurationsSummary"
+            android:entryValues="@array/countdownDurations"
+            android:defaultValue="10"/>
+        <ListPreference 
+            android:key="prefExerciseDuration"
+            android:title="Exercise Duration"
+            android:entries="@array/exerciseDurationsSummary"
+            android:entryValues="@array/exerciseDurations"
+            android:defaultValue="30"/>
+        <CheckBoxPreference 
+            android:key="prefPing"
+            android:title="Enable pinging"
+            android:defaultValue="true"/>
+        <CheckBoxPreference 
+            android:key="prefVibrate"
+            android:title="Enable vibrate"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

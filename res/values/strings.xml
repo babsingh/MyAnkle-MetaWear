@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ActivityInformation -->
+    <string name="info_header_section1">FAQs</string>
+    <string name="info_header_section2">Privacy</string>
+    <string name="info_header_section3">Medical</string>
+    <string name="info_header_section4">Consent</string>
+    <string name="info_header_section5">Withdraw</string>
+
+    <!-- ActivityMain -->
+
+
+    <!-- ActivityProfile -->
+
+
+    <!-- ActivitySettings -->
+
+
+    <!-- ActivityTutorial -->
+    <string name="tutorial_title_section1">Section 1</string>
+    <string name="tutorial_title_section2">Section 2</string>
+    <string name="tutorial_title_section3">Section 3</string>
+    <string name="tutorial_title_section4">Section 4</string>
+    <string name="tutorial_title_section5">Section 5</string>
+    <string name="tutorial_title_section6">Section 6</string>
+    <string name="tutorial_title_section7">Section 7</string>
+    <string name="tutorial_title_section8">Section 8</string>
+    <string name="tutorial_title_section9">Section 9</string>
+    <string name="tutorial_title_section10">Section 10</string>
+    <string name="tutorial_title_section11">Section 11</string>
+
+    <!-- ExercisesListAdapter -->
+
+
+    <!-- FragmentOptOut -->
+    <string name="fragment_opt_out_title">Withdraw Research Participation</string>
+    <string name="fragment_opt_out_body">If you have reviewed our informed consent form and wish to withdraw your participation from research please select the button below. Please note that all future balance results will not be used for research purposes. If you still have concerns please contact us at myankle@utoronto.ca.</string>
+    <string name="fragment_opt_out_accept">I wish to withdraw</string>
+
+    <!-- FragmentAgreement -->
+    <string name="fragment_agreement_title_1">Privacy Agreement</string>
+    <string name="fragment_agreement_title_2">Medical Disclaimer</string>
+    <string name="fragment_agreement_title_3">Informed Consent for Research Participation</string>
+    <string name="fragment_agreement_body_1">@string/privacy_policy</string>
+    <string name="fragment_agreement_body_2">@string/medical_disclaimer</string>
+    <string name="fragment_agreement_body_3">@string/informed_concent</string>
+    <string name="fragment_agreement_accept_text">I accept the above terms</string>
+
+    <!-- FragmentCalibration -->
+    <string name="calibration_initial_alert_title">Calibration</string>
+    <string name="calibration_initial_alert_message">myAnkle needs to calibrate your phone to accurately measure your balance. Simply follow the on-screen instructions. This will only take a few seconds.</string>
+    <string name="calibration_initial_alert_positive_button">Start Calibration</string>
+    <string name="calibration_error_alert_title">Acceleration in getActivity() axis is really off. Please try again!</string>
+    <string name="calibration_error_alert_positive_button">Back to Title</string>
+    <string name="calibration_done_alert_title">Calibration Complete</string>
+    <string name="calibration_done_alert_positive_button">Do some exercises!</string>
+    <string name="calibration_back_alert_title">"Stop Calibrating?"</string>
+    <string name="calibration_back_alert_positive_button">Yes</string>
+    <string name="calibration_back_alert_negitive_button">No</string>
+    <string name="calibration_instruction_1">On a flat level surface put the phone down with the screen up</string>
+    <string name="calibration_instruction_2">Put the phone on it’s left edge</string>
+    <string name="calibration_instruction_3">Put the phone in it’s bottom edge</string>
+    <string name="calibration_instruction_4">Put the phone on it’s right edge</string>
+    <string name="calibration_instruction_5">Put the phone on it’s top edge</string>
+    <string name="calibration_instruction_6">Put the phone screen down</string>
+    <string name="calibration_status_good">Good, right there!</string>
+    <string name="calibration_status_not_good">Please position device</string>
+
+    <!-- FragmentExerciseInstruction -->
+
+
+    <!-- FragmentExerciseMeasure -->
+    <string name="exercise_countdown_subtitle">Now is the time to attach the device to your ankle</string>
+    <string name="exercise_messure_subtitle">If you can read this the device is not strapped to your ankle :(, you should slide to cancel and try again!</string>
+    <string name="exercise_countdown_title">Starting Soon</string>
+    <string name="exercise_messure_title">Now Measuring</string>
+
+    <!-- FragmentExerciseResult -->
+
+
+    <!-- FragmentExercises -->
+    <string name="exercise_change_selection">Change Selection</string>
+    <string name="exercise_current_selection">Current Selection</string>
+    <string name="exercise_dialog_eye_open_desc">Eyes Open</string>
+    <string name="exercise_dialog_eye_closed_desc">Eyes Closed</string>
+    <string name="exercise_dialog_title">Exercise Mode</string>
+
+
+    <!-- FragmentInfo -->
+    <string name="info_title_section1">Frequently Asked Question</string>
+    <string name="info_title_section2">Privacy Policy</string>
+    <string name="info_title_section3">Medical Disclaimer</string>
+    <string name="info_title_section4">Informed Consent</string>
+    <string name="info_content_section1">@string/faq</string>
+    <string name="info_content_section2">@string/privacy_policy</string>
+    <string name="info_content_section3">@string/medical_disclaimer</string>
+    <string name="info_content_section4">@string/informed_concent</string>
+
+    <!-- FragmentProfileQuestions -->
+    <string name="profile_question_title">Update Profile</string>
+    <string name="profile_question_body">In order for your results to be useful for research we need a few basic pieces of information about you.\n</string>
+    <string name="profile_question_0_body">Name</string>
+    <string name="profile_question_1_body">Age</string>
+    <string name="profile_question_2_body">Gender</string>
+    <string name="profile_question_2_radio1">Male</string>
+    <string name="profile_question_2_radio2">Female</string>
+    <string name="profile_questions_button_bar_discard">Discard</string>
+    <string name="profile_questions_button_bar_next">Next</string>
+    <string name="profile_injuries_title_create">Record Ankle Injury</string>
+    <string name="profile_injuries_title_update">Record New Injury</string>
+    <string name="profile_injuries_body_create">Indicate any ankle injuries you sustained in the past 6 months. This information is used to structure your treatment plan in the future.\n</string>
+    <string name="profile_injuries_body_update">Record any new ankle injury you sustained recently. The injury date must be after the most recent date on record.\n</string>
+    <string name="profile_question_3_body">Injured ankle in the last 6 months?</string>
+    <string name="profile_question_label_left_ankle">Left Ankle</string>
+    <string name="profile_question_label_right_ankle">Right Ankle</string>
+    <string name="profile_injuries_select_date">Select Date</string>
+    <string name="profile_question_button_bar_finish">Finish</string>
+    <string name="profile_question_button_bar_restart">Restart</string>
+    <string name="profile_questions_injury_alert_title">Warning</string>
+    <string name="profile_questions_injury_alert_messagee">Due to your recent ankle injury myAnkle strongly recommends caution with all balance exercises and avoid all that cause pain or discomfort. myAnkle recommends that you avoid all of the "hard" and "very hard" balance exercises.</string>
+    <string name="profile_questions_injury_alert_positive_button">I understand</string>
+    <string name="profile_delete_warning_title">Delete User</string>
+    <string name="profile_delete_warning_desc">Clicking \'Delete User\' will permanently delete this user account and all associated data, including exercise sessions and injury dates. This cannot be un-done.</string>
+    <string name="profile_delete_warning_confirm">I understand</string>
+
+    <!-- FragmentProgress -->
+
+
+    <!-- FragmentProgressTable -->
+
+
+    <!-- FragmentTitle -->
+    <string name="title_welcome_text">Welcome!\nLet\'s get started</string>
+    <string name="title_start_button">Measure my balance</string>
+    <string name="title_progress_button">View my progress</string>
+    <string name="title_tutorial_button">Tutorial</string>
+	<string name="title_select_device_button">Select Device</string>
+	
+    <!-- FragmentTutorialFinish -->
+    <string name="tutorial_finish_title">Now let\'s measure your balance!</string>
+    <string name="tutorial_finish_button_bar_consent">Consent</string>
+    <string name="tutorial_finish_button_bar_do_not_consent">Exit</string>
+
+    <!-- FragmentTutorialStart -->
+    <string name="tutorial_start_title">myAnkle</string>
+    <string name="tutorial_start_logo_contentdescription">application logo of a foot</string>
+    <string name="tutorial_start_copy">The app designed by a physical therapist to improve your balance!</string>
+
+    <!-- FragmentTutorialStep -->
+    <string name="tutorial_description_step1">Choose from a variety of exercises</string>
+    <string name="tutorial_description_step2">Secure the device</string>
+    <string name="tutorial_description_step3">Measure your Balance Number (BN)</string>
+    <string name="tutorial_description_step4">Improve!</string>
+
+    <!-- Menu List Items -->
+    <string name="menu_item_settings">Settings</string>
+    <string name="menu_item_profile">Update Profile</string>
+    <string name="menu_item_calibration">Calibration</string>
+    <string name="menu_item_info">Info</string>
+    <string name="menu_item_user_id">Show User Id</string>
+    <string name="menu_item_research">Research</string>
+    <string name="app_name">myAnkle</string>
+    <string name="dialog_ok">OK</string>
+    <string name="instruction_content_description">An image to show how the exercise should be performed.</string>
+    <string name="instruction_button">Start measuring!</string>
+    <string name="noop">Calibrating</string>
+    <string name="calibration_content_description">An image showing how to orient the device in the 6 axis.</string>
+    <string name="measure_seekbar_label">Slide to Stop</string>
+    <string name="results_back_to_exercises_button">New exercise</string>
+    <string name="results_retry_exercise_button">Retry exercise</string>
+    <string name="app_info">Nothing to do here!</string>
+    <string name="contentDescription_exercise_row_icon">exercise icon</string>
+    <string name="exercise_results_message">Remember a lower BN is better!</string>
+
+    <!-- multi use strings -->
+    <string name="faq">		What is myAnkle?\n\nmyAnkle is a mobile application that can measure your balance! myAnkle is designed by a physical therapist and a group of engineers to help you measure and improve your balance. When you complete a balance exercise, you will receive a BN or a Balance Number. This number tells you how good your balance is. A lower Balance Number means you have better balance. As you repeat the exercises or perform them on your right and left ankle, you will be able to compare your balance and over time track your progress. The myAnkle team is currently conducting research to determine the validity and reliability of this app.\n\n
+	    What does my BN really mean?\n\nThe BN or Balance Number is your average acceleration for a specific balance exercise. Acceleration is how much your velocity changed divided by time. Velocity is how fast you are moving in a certain direction. The equation for average acceleration is: Average Acceleration = Change in velocity / time. myAnkle calculates your acceleration several times per second to determine an average acceleration. By applying average acceleration to balance exercises, the lower your average acceleration or your BN, the better you performed on a balance exercise.\n\n
+	    How do I know what is a good BN?\n\nCompare your right and your left ankle and see which one has better balance. Compare with friends and family to get an idea of how your balance is relative to other people. In general, younger people, people without lower leg injuries in the past, and those that participate in activities that involve running and quick changes in direction perform better in balance exercises and thus will have a lower BN. In the future versions of this app, we will provide you with the average Balance Number for other users.\n\n
+	    Is myAnkle really free?\n\nYes!\n\n
+	    Why was myAnkle created?\n\nDuring the past 12 years working as a physical therapist, I often assess and treat patients with balance problems. I currently assess patients’ balance by watching them perform balance exercises and scoring them on simple scales that tell me how good their balance is. The unfortunate thing about this method is that my patients can’t measure balance on their own. As a result, people may not do balance exercises because they do not know when they are improving and they can\'t track their progress. myAnkle is the solution to this problem: people (patients and clinicians) can now measure and improve their balance with the use of this app. Balance impairments are a major reason why people hurt themselves in sports and physical activities. After injuries, many people either don’t return to their sport or physical activity or do so without adequate balance and suffer further injury. With myAnkle, people can measure their balance on both their right and left ankles and see if there are major issues on one side compared to the other. myAnkle is also intended for health care providers to help them objectively measure their patients’ balance and document their progress over time.\n\n
+	    Why did I have to calibrate my phone the first time I used the app?\n\nEach mobile phone has a different accelerometer. For this reason, we need to calibrate your accelerometer before the app can accurately measure your balance. This calibration is used to calculate your Balance Number (BN).\n\n
+	    Is there ever a need to calibrate my phone again?\n\nYes. If you drop your phone, you should calibrate again to make sure that the accelerometer is still providing accurate readings.\n\n
+	    What if I do not have an arm band? Can I just hold my mobile phone in my hand?\n\nNo. If you do not have an arm band, please review the tutorial which shows you how you can use a sock to secure the mobile phone close to your ankle. The mobile phone needs to be as close to your ankle as possible while still letting you move comfortably. The mobile phone has to move as part of your lower leg and not be loose around your ankle.\n\n
+	    Why do I have to have my hands on my hips and look forward when I do the balance exercises?\n\nThe myAnkle team is trying to compare balance exercise results between users and if everyone uses the app in a similar way, comparing between users will be much more accurate. Also, in the current balance research, this is the typical position in which people are tested so we are trying to stay consistent with the research. You may not be able to maintain this position and if you lose this position, try to get back to it as soon as possible during your balance exercise.\n\n
+	    I never have enough time to strap the phone to my ankle after I hit the start measurement button, what should I do?\n\nIn the settings of the app press "Countdown time." This will allow you to change the countdown time from 1 second up to 30 seconds. The default countdown is 10 seconds. We recommend that you have your equipment and surroundings prepared before you hit the “Start Measurement” button.\n\n
+	    In the settings I see that I have the option to change the measurement time from 10 to 60 seconds. Which should I pick?\n\nIf you are measuring your balance for the first time, select 30 seconds (this is the default). In clinical practice and in the balance research, the majority of researchers and clinicians test for 20 to 30 seconds. This is thought to be long enough to obtain an accurate measure of your balance. If, however, you have already measured your balance and you are interested in performing the balance exercises to improve your balance, we recommend 60 seconds.\n\n
+	    Why does the app ask me if I want to save or delete my results at the end of each session?\n\nIf you did something wrong during the exercise, such as had the mobile phone on the wrong leg, did not do the balance exercise you selected, or stopped during the exercise, we want you to have the option of deleting the results. The more accurate you are, the better the comparison myAnkle can make between your right and left ankle and the various balance exercises. For example, if you selected a very difficult balance exercise but instead just stood with both feet on the ground, you would receive a very low (or good) Balance Number. When you do this exercise later all of your results will be compared to this inaccurate result which you will not be able to match or improve upon.\n\n
+	    How is the phone able to measure balance?\n\nmyAnkle uses the accelerometer within your mobile phone to measure balance. An accelerometer is a device which measures acceleration in three planes of movement (x,y and z). These planes represent movement up and down, side to side, and back and forth. myAnkle takes these numbers and gets the average acceleration for every exercise that you perform. Accelerometers have been used in clinical practice and in research to quantify human movement. myAnkle is simply taking this concept and allowing anyone with a smartphone to be able to do what clinicians and researchers already do. Yes, the accelerometer in your mobile phone is not as expensive and fancy as the ones that are used in research labs but based on some preliminary results of our research, we are finding that even the accelerometer in your mobile phone is quite good at determining your balance.\n\n</string>
+    <string name="privacy_policy">		myAnkle respects your privacy and protects the information that we collect. myAnkle sends your balance results to a remote server that is password protected and is only accessible by the myAnkle team. The data that we collect and store includes your age, sex, if and when you have had an ankle injury and the raw balance data (a bunch of numbers which tells us about your balance). We do not share this data with advertisers or marketers. We do not sell or barter your data to third parties. By using the app, you are participating in research. All data will be presented anonymously when it is utilized for research or development purposes. If you choose to complete the profile section of this app in the future (this feature is not yet available), the myAnkle team will have access to this anonymous data. myAnkle utilizes Google Analytics which provides the developers with data about the app usage such as when people are using it,  geographic location of users, when people stop using it, the number of people that have downloaded, the screen where users stop using the app, how many repeat users there are, if the app crashes, frequency of use and the devices that download the app (eg, Samsung, Nexus, HTC, etc). This information will be used for future development and to fix issues with the app. This data is anonymous.</string>
+    <string name="medical_disclaimer">		myAnkle does not replace the advice or treatment provided by a health care provider. If you have an injury, a neurological disorder, any other medical condition or medication that alters your balance, consult a health care provider before using this app. If you have a risk of falling or have had falls in the past, do not use this app. Perform only the balance exercises that you feel you can do without falling or hurting yourself. If you are under the care of a health care provider, perform only those balance exercises approved by your health care provider. Your use of the app is strictly voluntary. Use myAnkle with care and within your current balance abilities to avoid the risk of injury.</string>
+    <string name="informed_concent">		Project Title: Developing and testing of a mobile application to measure balance using a smartphone\n\nInvestigator: Nirtal Shah, Physical Therapist, MPH candidate\n\nSupervisor: Jonathan Rose, PhD. Professor, Department of Electrical and Computer Engineering\n\nContact: myankle@utoronto.ca\n\n
+	    
+	    The purpose of this project is to explore the ability of a mobile application (or app) to measure balance. By using myAnkle you are agreeing to participate in research. Your participation will involve using this app as often as you would like at your own convenience. The research team is attempting to determine the utility of the app and to establish normal values for balance exercises across larger populations. You will be identified by your age, sex and a unique identification number. The data we collect and store will be your raw balance data (a bunch of numbers which tell us about your balance), ankle injury data you provide, and your self reported age and sex. If you choose to complete the profile page of the app (which will be available in the future version of this app), the researchers will have access to this data for research purposes. All of the information we collect and store is anonymous, meaning we do not ask for your first or last name.\n\n
+	    There is a very minor risk of injury to your ankle or falling while performing some of the balance exercises. We recommend that everyone starts with a balance exercise listed as “Easy.” If you loose your balance 5 times or more while performing an “Easy” balance exercise do not progress to any other level of balance exercise. We ask that you only perform balance exercises that are within your capabilities without risking injury. If the balance exercise produces any pain or discomfort stop the exercise. In the information page of the app there is an option to withdraw from the study. If you choose to withdraw your results will be deleted and your data will not be stores or used for research purposes. Your participation is entirely voluntary.\n\n
+	    The only compensation you will receive is the myAnkle app. You will also gain some awareness of your own balance and ankle stability. It is important to note that the researchers plan to commercialize this mobile application. If the application is commercialized, as a participant, you will not receive any compensation. The results of this study may also be published in peer reviewed journals or presented at professional conferences in which case you will be identified only by a number or your data will be grouped with other subjects for the purpose of statistical analysis. Computer data will be password protected. A number will be used to identify each participant and participant data will be stored for 5 years at which point the primary investigator will apply for an extension for another 5 years.\n\n
+	    If you have further questions or concerns you can contact the research team at myankle@utoronto.ca. You can also contact the University of Toronto’s Office of Research Ethics at ethics.review@utoronto.ca. This consent form, a copy of which can be found on the information page of the app for your reference, is part of the process of informed consent.\n\n
+	    If you agree that the process of informed consent for the purpose of research and your involvement have been explained to you and you have had your questions or concerns addressed appropriately by the information provided please click on “I Agree” below.</string>
+
+    <!-- MetaWear - Remove unused strings -->
+    <string name="title_activity_activity_calibration">ActivityCalibration</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="calibration_successful_toast">Calibration completed successfully!</string>
+    <string name="calibration_failed_toast">Calibration failed. Please try again!</string>
+    <string name="title_activity_activity_progress">ActivityProgress</string>
+    <string name="title_activity_activity_measure">ActivityMeasure</string>
+    <string name="login_login">Login</string>
+    <string name="login_create_user">Create User</string>
+    <string name="login_username_hint">Username</string>
+    <string name="ankle_selection_spinner_description">Select Ankle</string>
+    <string name="menu_logout">Logout</string>
+    <string name="fragment_progress_button_swipe_down">Swipe Down for Graphs</string>
+    <string name="fragment_progress_button_swipe_up">Swipe Up for Results</string>
+    <string name="menu_item_left_anke">Left Ankle</string>
+    <string name="menu_item_right_ankle">Right Ankle</string> 
+    <string name="menu_item_select_ankle">Select Ankle</string>
+    <string name="ankle_selection_dialog_cancel">Cancel</string>
+    <string name="ankle_selection_dialog_done">Done</string>
+    
+    <string name="label_mac_address">MAC Address</string>
+    <string name="label_accelerometer">Accelerometer</string>
+    <string name="label_led_state">LED State</string>
+    <string name="label_led_color">LED Color</string>
+    <string name="label_orientation">Orientation</string>
+    <string name="label_switch">Switch</string>
+    <string name="label_serial_number">Serial Number</string>
+    <string name="label_manufacturer">Manufacturer</string>
+    <string name="label_firmware_version">Firmware Version</string>
+    <string name="label_hardware_version">Hardware Version</string>
+    <string name="label_temperature">Temperature</string>
+    <string name="label_accelerometer_data">Accelerometer Data</string>
+    <string name="label_freefall_status">In Free Fall</string>
+    <string name="label_led_red">Red</string>
+    <string name="label_led_green">Green</string>
+    <string name="label_led_blue">Blue</string>
+    <string name="label_commands">Commands</string>
+    <string name="title_module_detail">Module Detail</string>
+    
+    <string name="mw_about_text">The MetaWear app provides a GUI for interacting with a MetaWear board and serves as an example on how to use the MetaWear API.</string>
+
+    <string name="font_path">fonts/trebucbd.ttf</string>
+    <string name="normal_font_path">fonts/trebuc.ttf</string>
+    
+    <string name="permission_log_label">read and write log</string>
+    <string name="permission_log_description">Allows the app to write and read from Nordic Semiconductor Event log</string>
+    
+    <string name="action_about">About</string>
+    <string name="action_connect">CONNECT</string>
+    <string name="action_select">SELECT DEVICE</string>
+    <string name="action_disconnect">DISCONNECT</string>
+    
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="drawer_plugins">PLUGINS</string>
+    <string name="drawer_plugin_mcp">nRF Master Control Panel</string>
+    
+    <string name="battery">%d%%</string>
+    <string name="progress">%d%%</string>
+    <string name="not_available">n/a</string>
+    <string name="not_available_value">" - "</string>
+    <string name="no_ble">Device doesn\'t have BLE support!</string>
+    <string name="no_apps">No profiles found.</string>
+    <string name="not_supported">The device does not have required services.</string>
+    <string name="no_application">Web Borswer application is not available.</string>
+    <string name="scanner_title">Select device:</string>
+    <string name="scanner_empty">No device found</string>
+    <string name="scanner_action_scan">Scan</string>
+    <string name="scanner_action_cancel">Cancel</string>
+    <string name="scanner_subtitle_bonded">BONDED DEVICES:</string>
+    <string name="scanner_subtitle__not_bonded">AVAILABLE DEVICES:</string>
+    
+    <string name="bonding">Bonding with the device&#8230;</string>
+    <string name="bonded">The device is now bonded.</string>
+    
+    <string name="about_title">About</string>
+    <string name="about_version">\n\nVersion: %s</string>
+    <string name="about_text">The nRF Toolbox is a container application that stores your Nordic Semiconductor apps in one location.</string>
+    <string name="label_connect">Select</string>
+    <string name="label_disconnect">Change</string>
+    <string name="label_dfu">dfu</string>
+    
+    <string name="label_select_device">Connect</string>
+    <string name="label_change_device">Disconnect</string>
+
+</resources>

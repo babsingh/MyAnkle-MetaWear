@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  	xmlns:tools="http://schemas.android.com/tools"
+  	android:id="@+id/fragment_agreement_relative_layout"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:focusable="true" 
+    android:focusableInTouchMode="true"
+    android:padding="@dimen/medium_margin" >
+    
+    <TextView
+    	android:id="@+id/fragment_withdraw_textview_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/extra_large_text"
+        android:textStyle="bold" 
+        android:text="@string/fragment_opt_out_title"/>   
+        
+    <ScrollView
+        android:id="@+id/fragment_withdraw_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/fragment_withdraw_accept_bar"
+        android:layout_below="@+id/fragment_withdraw_textview_title"
+        android:paddingBottom="@dimen/medium_margin"
+        android:paddingTop="@dimen/small_margin" >
+        
+        <TextView
+        	android:id="@+id/fragment_withdraw_body"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:fontFamily="sans-serif-light"
+        	android:textColor="@color/black"
+        	android:text="@string/fragment_opt_out_body"
+        	android:textSize="@dimen/small_text" />
+               
+    </ScrollView>
+    
+ 	<LinearLayout
+        android:id="@+id/fragment_withdraw_accept_bar"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <CheckBox
+   	    android:id="@+id/fragment_withdraw_checkbox_accept"
+   	    android:layout_height="wrap_content"
+   	    android:layout_width="fill_parent"
+   	    android:gravity="center_vertical"
+   	    android:textColor="@color/blue"
+   	    android:textSize="@dimen/medium_text"
+   	    android:fontFamily="sans-serif-light"
+   	    android:text="@string/fragment_opt_out_accept" />
+    </LinearLayout>
+
+
+    
+</RelativeLayout>
