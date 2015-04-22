@@ -1,5 +1,5 @@
 # MyAnkle-MetaWear
-**Thesis:** Added wearable interface and feedback system in MyAnkle app
+**Thesis:** Designed and implemented a wearable interface and a feedback system for MyAnkle [Android Application]
 
 The changes made to existing MyAnkle source files are shown below:
 
