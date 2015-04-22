@@ -945,7 +945,11 @@ public class FragmentExerciseMeasure extends ModuleFragment implements OnSeekBar
 	    	lowerBN = parent.feedbackLowerBN;
 	    	upperBN = parent.feedbackUpperBN;
 	    	
-			mSoundPoolHelper.pingFeedback(curBN, lowerBN, upperBN);
+	    	// Use Aggregate Balance Number 
+			//mSoundPoolHelper.pingFeedback(curBN, lowerBN, upperBN);
+	    	
+	    	// Use Transient Balance Number
+	    	mSoundPoolHelper.pingFeedback(tempBN, lowerBN, upperBN);
 		}
 	}
 	
